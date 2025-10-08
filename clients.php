@@ -17,7 +17,6 @@
             <?php
             $data = glob("assets/imgs/innerpage/clients/*.*");
             ?>
-            <div class="row">
                 <?php
                 foreach ($data as $c) {
                 ?>
@@ -29,7 +28,6 @@
                 <?php
                 }
                 ?>
-        </div>
     </div>
 </section>
 

@@ -22,7 +22,6 @@
             <?php
             $data = glob("assets/imgs/innerpage/exhibition/boiler-india/*.*");
             ?>
-            <div class="row g-4 mt-0">
                 <?php
                 foreach ($data as $c) {
                 ?>
@@ -34,7 +33,6 @@
                 <?php
                 }
                 ?>
-            </div>
         </div>
     </div>
 
@@ -53,7 +51,6 @@
                 <?php
             $data = glob("assets/imgs/innerpage/exhibition/oil-gas-power-2025/*.*");
             ?>
-                <div class="row g-4 mt-0">
                     <?php
                 foreach ($data as $c) {
                 ?>
@@ -65,7 +62,6 @@
                     <?php
                 }
                 ?>
-                </div>
             </div>
 </section>
 

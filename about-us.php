@@ -98,14 +98,14 @@
     <div class="numbers wow fadeIn" data-wow-delay=".4s">
       <div class="row justify-content-center">
 
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6 col-6">
           <div class="item md-mb50">
             <h2 class="fw-800 stroke"><span class="odometer" id="expYears">0</span></h2>
             <h6>Years of Experience</h6>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 ">
+        <div class="col-lg-3 col-md-6 col-6 ">
           <div class="item md-mb50 text-center">
             <h2 class="fw-800"><span class="odometer" id="projects">0</span><span
                 class="fz-80 fw-600">k</span></h2>
@@ -113,7 +113,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 ">
+        <div class="col-lg-3 col-md-6 col-6 ">
           <div class="iitem md-mb50 text-center">
             <h2 class="fw-800 stroke"><span class="odometer" id="customers">0</span><span
                 class="fz-80 fw-600">k</span></h2>
@@ -121,7 +121,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 ">
+        <div class="col-lg-3 col-md-6 col-6 ">
           <div class="item md-mb50 text-center">
             <h2 class="fw-800"><span class="odometer" id="awards">0</span></h2>
             <h6>Awards Won</h6>

@@ -32,8 +32,8 @@
 
 <body class="home-digital main-bg">
    <!-- <div id="smooth-wrapper"> -->
-      <div class="top-bar">
-         <div class="container d-none d-xl-block">
+      <div class="top-bar d-none d-xl-block">
+         <div class="container">
             <div class="row">
                <div class="col-xl-7">
                   <ul>

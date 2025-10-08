@@ -1,58 +1,63 @@
-<?php include('header.php');?>
+<?php include('header.php'); ?>
 <div class="slider arch-slider">
     <div class="swiper-container banner-slider ">
         <div class="swiper-wrapper">
+            <!-- Slide 1 -->
             <div class="swiper-slide">
                 <div class="img">
                     <picture>
-                        <source media="(min-width:768px)" srcset="./assets/imgs/banner/skywin-valve-b1.webp">
                         <source media="(max-width:767px)" srcset="./assets/imgs/banner/skywin-valve-mob-b1.webp">
-                        <img src="./assets/imgs/banner/skywin-valve-b1.webp" alt="Flowers" style="width:auto;">
+                        <img src="./assets/imgs/banner/skywin-valve-b1.webp" alt="Skywin Valve Banner 1" loading="lazy">
                     </picture>
                 </div>
             </div>
+
+            <!-- Slide 2 -->
             <div class="swiper-slide">
                 <div class="img">
                     <picture>
-                        <source media="(min-width:768px)" srcset="./assets/imgs/banner/skywin-valve-b2.webp">
                         <source media="(max-width:767px)" srcset="./assets/imgs/banner/skywin-valve-mob-b2.webp">
-                        <img src="./assets/imgs/banner/skywin-valve-b2.webp" alt="Flowers" style="width:auto;">
+                        <img src="./assets/imgs/banner/skywin-valve-b2.webp" alt="Skywin Valve Banner 2" loading="lazy">
                     </picture>
                 </div>
             </div>
+
+            <!-- Slide 3 -->
             <div class="swiper-slide">
                 <div class="img">
                     <picture>
-                        <source media="(min-width:768px)" srcset="./assets/imgs/banner/skywin-valve-b3.webp">
                         <source media="(max-width:767px)" srcset="./assets/imgs/banner/skywin-valve-mob-b3.webp">
-                        <img src="./assets/imgs/banner/skywin-valve-b3.webp" alt="Flowers" style="width:auto;">
+                        <img src="./assets/imgs/banner/skywin-valve-b3.webp" alt="Skywin Valve Banner 3" loading="lazy">
                     </picture>
                 </div>
             </div>
+
+            <!-- Slide 4 -->
             <div class="swiper-slide">
                 <div class="img">
                     <picture>
-                        <source media="(min-width:768px)" srcset="./assets/imgs/banner/skywin-valve-b4.webp">
                         <source media="(max-width:767px)" srcset="./assets/imgs/banner/skywin-valve-mob-b4.webp">
-                        <img src="./assets/imgs/banner/skywin-valve-b4.webp" alt="Flowers" style="width:auto;">
+                        <img src="./assets/imgs/banner/skywin-valve-b4.webp" alt="Skywin Valve Banner 4" loading="lazy">
                     </picture>
                 </div>
             </div>
+
+            <!-- Slide 5 -->
             <div class="swiper-slide">
                 <div class="img">
                     <picture>
-                        <source media="(min-width:768px)" srcset="./assets/imgs/banner/skywin-valve-b5.webp">
                         <source media="(max-width:767px)" srcset="./assets/imgs/banner/skywin-valve-mob-b5.webp">
-                        <img src="./assets/imgs/banner/skywin-valve-b5.webp" alt="Flowers" style="width:auto;">
+                        <img src="./assets/imgs/banner/skywin-valve-b5.webp" alt="Skywin Valve Banner 5" loading="lazy">
                     </picture>
                 </div>
             </div>
+
+            <!-- Slide 6 -->
             <div class="swiper-slide">
                 <div class="img">
                     <picture>
-                        <source media="(min-width:768px)" srcset="./assets/imgs/banner/skywin-valve-b6.webp">
                         <source media="(max-width:767px)" srcset="./assets/imgs/banner/skywin-valve-mob-b6.webp">
-                        <img src="./assets/imgs/banner/skywin-valve-b6.webp" alt="Flowers" style="width:auto;">
+                        <img src="./assets/imgs/banner/skywin-valve-b6.webp" alt="Skywin Valve Banner 6" loading="lazy">
                     </picture>
                 </div>
             </div>
@@ -240,19 +245,17 @@
             <?php
             $data = glob("./assets/imgs/innerpage/approved-list/*.*");
             ?>
-            <div class="row g-4">
                 <?php
                 foreach ($data as $c) {
                 ?>
-                <div class="col-md-3 col-xxl-2 col-6 mb-3">
-                    <a href="<?php echo $c; ?>" class="fancybox popup-image gallery-item">
-                        <img class="w-100" src="<?php echo $c; ?>" />
-                    </a>
-                </div>
+                    <div class="col-md-3 col-xxl-2 col-6 mb-3">
+                        <a href="<?php echo $c; ?>" class="fancybox popup-image gallery-item">
+                            <img class="w-100" src="<?php echo $c; ?>" />
+                        </a>
+                    </div>
                 <?php
                 }
                 ?>
-            </div>
         </div>
 </section>
 
@@ -523,32 +526,32 @@
                 <div class="work-crus work-crus3 out">
                     <div id="content-carousel-container-unq-w " class="work-ind">
 
-                        <?php 
-                                    $data = glob("./assets/imgs/industry-we-serve/*.*");
-                                 ?>
+                        <?php
+                        $data = glob("./assets/imgs/industry-we-serve/*.*");
+                        ?>
                         <div class="swiper-wrapper">
 
-                            <?php 
-                                      foreach($data as $b){
-                                 ?>
+                            <?php
+                            foreach ($data as $b) {
+                            ?>
 
-                            <div class="swiper-slide">
-                                <div class="item">
-                                    <div class="img">
-                                        <img class="d-block w-100" alt="..." src="<?php echo $b; ?>">
-                                        <div class="cont">
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="img">
+                                            <img class="d-block w-100" alt="..." src="<?php echo $b; ?>">
+                                            <div class="cont">
 
-                                            <h6 class="fz-18">
-                                                <?php echo str_replace("-"," ",str_replace(".webp","", str_replace("./assets/imgs/industry-we-serve/","",$b))); ?>
-                                            </h6>
+                                                <h6 class="fz-18">
+                                                    <?php echo str_replace("-", " ", str_replace(".webp", "", str_replace("./assets/imgs/industry-we-serve/", "", $b))); ?>
+                                                </h6>
+                                            </div>
+                                            <a href="project-details2.html" class="plink"></a>
                                         </div>
-                                        <a href="project-details2.html" class="plink"></a>
                                     </div>
                                 </div>
-                            </div>
                             <?php
-                                 }
-                                 ?>
+                            }
+                            ?>
 
                         </div>
 
@@ -565,14 +568,14 @@
         <div class="numbers wow fadeIn" data-wow-delay=".4s">
             <div class="row justify-content-center">
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6 col-6">
                     <div class="item md-mb50">
                         <h2 class="fw-800 stroke"><span class="odometer" id="expYears">0</span></h2>
                         <h6>Years of Experience</h6>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 ">
+                <div class="col-lg-3 col-md-6 col-6 ">
                     <div class="item md-mb50 text-center">
                         <h2 class="fw-800"><span class="odometer" id="projects">0</span><span
                                 class="fz-80 fw-600">k</span></h2>
@@ -580,7 +583,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 ">
+                <div class="col-lg-3 col-md-6 col-6 ">
                     <div class="iitem md-mb50 text-center">
                         <h2 class="fw-800 stroke"><span class="odometer" id="customers">0</span><span
                                 class="fz-80 fw-600">k</span></h2>
@@ -588,7 +591,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 ">
+                <div class="col-lg-3 col-md-6 col-6 ">
                     <div class="item md-mb50 text-center">
                         <h2 class="fw-800"><span class="odometer" id="awards">0</span></h2>
                         <h6>Awards Won</h6>
@@ -947,4 +950,4 @@
     </div>
 </section>
 <!-- ==================== End Contact ==================== -->
-<?php include('footer.php');?>
+<?php include('footer.php'); ?>

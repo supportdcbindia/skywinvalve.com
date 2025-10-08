@@ -30,13 +30,12 @@
             <?php
             $data = glob("assets/imgs/innerpage/application/*.*");
             ?>
-            <div class="row g-4 mt-0">
                 <?php
                 foreach ($data as $c) {
                     // $applicationName = end(explode("/", $c));
                     $applicationName = pathinfo($c, PATHINFO_FILENAME);
                 ?>
-                    <div class="col-md-4 col-6 mt-5">
+                    <div class="col-md-4 col-12 mt-5">
                      
                             <img class="w-100" src="<?php echo $c; ?>" />
                             <h3 class="applicationTitle"><?php echo $applicationName; ?></h3>
@@ -45,7 +44,6 @@
                 <?php
                 }
                 ?>
-        </div>
     </div>
 </section>
 
