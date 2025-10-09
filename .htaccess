@@ -1,23 +1,23 @@
 # ============================================================
-# Secure .htaccess for Core-PHP (root PHP allowed, NO inline JS)
+# Core-PHP .htaccess — inline JS + jQuery CDNs allowed
 # ============================================================
 
 ServerSignature Off
 Options -Indexes +FollowSymLinks -MultiViews
 
-# -------- Block TRACE --------
+# ---- Block TRACE ----
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteCond %{REQUEST_METHOD} ^TRACE [NC]
   RewriteRule .* - [F]
 </IfModule>
 
-# -------- Hide dotfiles (.env, .git, etc.) --------
+# ---- Hide dotfiles (.env, .git, etc.) ----
 <FilesMatch "^\.">
   Require all denied
 </FilesMatch>
 
-# -------- Block sensitive files --------
+# ---- Block sensitive files ----
 <FilesMatch "(^composer\.(json|lock)$|^package\.json$|^yarn\.lock$|^phpunit\.xml$|^\.user\.ini$|^\.htaccess$|^web\.config$|.*\.(sql|bak|config|dist|inc|ini|log)$)">
   Require all denied
 </FilesMatch>
@@ -30,20 +30,20 @@ Options -Indexes +FollowSymLinks -MultiViews
   RewriteCond %{HTTPS} !=on
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
-  # Force non-www (switch to www block if you prefer)
+  # Force non-www (switch if you prefer www)
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
 </IfModule>
 
 # ------------------ PHP execution policy ------------------
-# Allow ANY PHP in the document root (so /about-us.php works)
-# Block PHP ONLY inside static folders
+# Allow ANY PHP in document root (so /about-us.php works)
+# Block PHP inside static folders
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteRule ^(assets|uploads|images|img|static)/.*\.(?:ph(?:p[0-9]?|t|tml)|phtml|phar)$ - [F,L]
 </IfModule>
 
-# ------------------ Request sanitation ------------------
+# ------------------ Basic request sanitation ------------------
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteCond %{QUERY_STRING} (base64_encode|base64_decode|eval\(|gzinflate|shell_exec|system\(|passthru|proc_open|popen) [NC,OR]
@@ -60,42 +60,15 @@ Options -Indexes +FollowSymLinks -MultiViews
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=(), bluetooth=()"
 
-  # Enable HSTS ONLY if full-site HTTPS is confirmed (sticky!)
+  # HSTS — enable only if full-site HTTPS is confirmed
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
 
-  # CSP — NO inline JS allowed. Load scripts from same origin only.
-  # If you use external CDNs (e.g., jsDelivr, Google Fonts), add them explicitly below.
-  Header set Content-Security-Policy "default-src 'self'; base-uri 'self'; frame-ancestors 'self'; form-action 'self'; img-src 'self' data: blob:; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src 'self'"
+  # ---- CSP: allow inline JS + common jQuery CDNs ----
+  # Add/adjust hosts as needed (keep only what you actually use).
+  Header set Content-Security-Policy "default-src 'self'; base-uri 'self'; frame-ancestors 'self'; form-action 'self'; img-src 'self' data: blob:; script-src 'self' 'unsafe-inline' https://code.jquery.com https://ajax.googleapis.com https://cdn.jsdelivr.net https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self'"
 
-  # Example CSP if using common CDNs (uncomment & tailor):
-  # Header set Content-Security-Policy "default-src 'self'; base-uri 'self'; frame-ancestors 'self'; form-action 'self'; img-src 'self' data: blob:; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self'"
+  # If you also load jQuery from Cloudflare CDN, add:
+  # Header edit Content-Security-Policy "script-src " "script-src https://cdnjs.cloudflare.com "
 </IfModule>
 
-# ------------------ Performance ------------------
-FileETag None
-<IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css application/json application/javascript application/xml application/xhtml+xml application/rss+xml application/atom+xml image/svg+xml
-</IfModule>
-<IfModule mod_expires.c>
-  ExpiresActive On
-  ExpiresByType image/webp "access plus 6 months"
-  ExpiresByType image/avif "access plus 6 months"
-  ExpiresByType image/jpeg "access plus 6 months"
-  ExpiresByType image/png "access plus 6 months"
-  ExpiresByType image/gif "access plus 6 months"
-  ExpiresByType image/svg+xml "access plus 6 months"
-  ExpiresByType font/woff2 "access plus 6 months"
-  ExpiresByType font/woff  "access plus 6 months"
-  ExpiresByType application/javascript "access plus 3 months"
-  ExpiresByType text/css "access plus 3 months"
-  ExpiresDefault "access plus 1 month"
-</IfModule>
-
-# ------------------ Optional: hotlink protection ------------------
-# <IfModule mod_rewrite.c>
-#   RewriteEngine On
-#   RewriteCond %{HTTP_REFERER} !^$ 
-#   RewriteCond %{HTTP_REFERER} !skywinvalve\.com [NC]
-#   RewriteCond %{HTTP_REFERER} !googleusercontent\.com [NC]
-#   RewriteRule \.(jpe?g|png|gif|webp|svg)$ - [F,L]
-# </IfModule>
+# ------------------ Perfor
