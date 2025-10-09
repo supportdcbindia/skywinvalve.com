@@ -125,11 +125,11 @@
 
 
    <script>
-      jQuery(document).ready(function() {
+      $(document).ready(function() {
 
 	/* This is basic - uses default settings */
 	
-	jQuery("a.single_image").fancybox();
+	$("a.single_image").fancybox();
 
 	
 });
