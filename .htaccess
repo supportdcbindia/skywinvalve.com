@@ -79,7 +79,6 @@ FileETag None
   ExpiresByType image/svg+xml "access plus 6 months"
   ExpiresByType font/woff2 "access plus 6 months"
   ExpiresByType font/woff  "access plus 6 months"
-  ExpiresByType application/javascript "access plus 3 months"
   ExpiresByType text/css "access plus 3 months"
   ExpiresDefault "access plus 1 month"
 </IfModule>
