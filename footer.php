@@ -125,14 +125,14 @@
 
 
    <script>
-      $(document).ready(function() {
+      // $(document).ready(function() {
 
 	/* This is basic - uses default settings */
 	
-	$("a.single_image").fancybox();
+// 	$("a.single_image").fancybox();
 
 	
-});
+// });
       // $(function () {
       //    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
       //    ScrollTrigger.normalizeScroll(true)
