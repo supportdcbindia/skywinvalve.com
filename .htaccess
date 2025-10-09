@@ -62,24 +62,6 @@ Options -Indexes +FollowSymLinks -MultiViews
   RewriteRule .* - [F,L]
 </IfModule>
 
-# ----------------
-# Security headers
-# ----------------
-<IfModule mod_headers.c>
-  Header always set X-Frame-Options "SAMEORIGIN"
-  Header always set X-Content-Type-Options "nosniff"
-  Header always set X-XSS-Protection "1; mode=block"
-  Header always set Referrer-Policy "strict-origin-when-cross-origin"
-  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=(), bluetooth=()"
-  # Enable HSTS ONLY if full-site HTTPS is confirmed (sticky!)
-  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
-
-  # CSP — add any CDNs you actually use (examples commented)
-  Header set Content-Security-Policy "default-src 'self'; base-uri 'self'; frame-ancestors 'self'; form-action 'self'; img-src 'self' data: blob:; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src 'self'"
-  # For Google Fonts/JSDelivr (uncomment if used):
-  # Header set Content-Security-Policy "default-src 'self'; base-uri 'self'; frame-ancestors 'self'; form-action 'self'; img-src 'self' data: blob:; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self'"
-</IfModule>
-
 # -------------
 # Performance
 # -------------
