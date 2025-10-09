@@ -1,0 +1,150 @@
+# ============================================================
+# Skywin Valve — Secure
+# Location: /public_html/.htaccess
+# Requires: Apache + mod_rewrite + mod_headers + (optional) mod_deflate, mod_expires
+# ============================================================
+
+# -------------------------------
+# 0) Baseline hardening & hygiene
+# -------------------------------
+ServerSignature Off
+Options -Indexes +FollowSymLinks -MultiViews
+
+# Block HTTP TRACE (XST)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_METHOD} ^TRACE [NC]
+  RewriteRule .* - [F]
+</IfModule>
+
+# Deny access to dotfiles (.env, .git, etc.)
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>
+
+# Block common sensitive/project files
+<FilesMatch "(^composer\.(json|lock)$|^package\.json$|^yarn\.lock$|^phpunit\.xml$|^\.user\.ini$|^\.htaccess$|^web\.config$|.*\.(sql|bak|config|dist|inc|ini|log)$)">
+  Require all denied
+</FilesMatch>
+
+# ------------------------------------------------
+# 1) Canonical routing + HTTPS (pick non-www here)
+# ------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Force HTTPS (comment out if SSL terminates at proxy/CDN)
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+  # Force NON-www  (switch to the www block below if you prefer)
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
+  # --- If you prefer WWW, use these 2 lines instead and comment the NON-www block above ---
+  # RewriteCond %{HTTP_HOST} !^www\. [NC]
+  # RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# -------------------------------------------------------------------
+# 2) PHP execution control (single-file: no per-folder .htaccess used)
+# -------------------------------------------------------------------
+# Deny executing any *.php INSIDE static buckets (assets/uploads/images/static)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^(assets|uploads|images|img|static)/.*\.ph(p[0-9]?|t|tml)$ - [F,L]
+</IfModule>
+
+# Allowlist where PHP is allowed (root, /api, /includes) — block everywhere else
+# Adjust paths to your app structure.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Allow index.php in root
+  RewriteCond %{REQUEST_URI} ^/index\.php$ [OR]
+  # Allow any PHP in /api and /includes
+  RewriteCond %{REQUEST_URI} ^/(api|includes)/ [OR]
+  # Allow root (/) so front controller patterns still work
+  RewriteCond %{REQUEST_URI} ^/$
+  RewriteRule .* - [S=1]
+
+  # If none of the allow rules matched and it's a PHP file, block it
+  RewriteRule \.ph(p[0-9]?|t|tml)$ - [F,L]
+</IfModule>
+
+# ---------------------------------------------------
+# 3) Simple request sanitation (safe conservative set)
+# ---------------------------------------------------
+# Block very suspicious query payloads often used by droppers
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # base64/eval in URL, remote file includes, etc.
+  RewriteCond %{QUERY_STRING} (base64_encode|base64_decode|eval\(|gzinflate|shell_exec|system\(|passthru|proc_open|popen) [NC,OR]
+  RewriteCond %{QUERY_STRING} (\.\./|\.\.\\|/etc/passwd|/proc/self) [NC,OR]
+  RewriteCond %{THE_REQUEST} \.\./ [NC]
+  RewriteRule .* - [F,L]
+</IfModule>
+
+# ------------------------------------------------
+# 4) Security headers (tight; tune CSP for your use)
+# ------------------------------------------------
+<IfModule mod_headers.c>
+  # Clickjacking / MIME sniff / legacy XSS hint
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-XSS-Protection "1; mode=block"
+
+  # Referrer policy
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Modern feature restrictions (adjust as needed)
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=(), bluetooth=()"
+
+  # HSTS — enable ONLY if HTTPS is fully working on your site (and subdomains if you include them)
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+  # Content Security Policy — start strict; add external hosts you actually use
+  # Common additions (uncomment if used):
+  #   fonts.googleapis.com fonts.gstatic.com cdn.jsdelivr.net unpkg.com
+  Header set Content-Security-Policy "default-src 'self'; base-uri 'self'; frame-ancestors 'self'; form-action 'self'; img-src 'self' data: blob:; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src 'self'"
+
+  # Prevent old IE download/open quirks
+  Header always set X-Download-Options "noopen"
+</IfModule>
+
+# ------------------------------------------------
+# 5) Performance (optional but recommended)
+# ------------------------------------------------
+# Disable ETags to avoid cache fragmentation across nodes
+FileETag None
+
+# Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css application/json application/javascript application/xml application/xhtml+xml application/rss+xml application/atom+xml image/svg+xml
+</IfModule>
+
+# Caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 6 months"
+  ExpiresByType image/avif "access plus 6 months"
+  ExpiresByType image/jpeg "access plus 6 months"
+  ExpiresByType image/png "access plus 6 months"
+  ExpiresByType image/gif "access plus 6 months"
+  ExpiresByType image/svg+xml "access plus 6 months"
+  ExpiresByType font/woff2 "access plus 6 months"
+  ExpiresByType font/woff  "access plus 6 months"
+  ExpiresByType application/javascript "access plus 3 months"
+  ExpiresByType text/css "access plus 3 months"
+  ExpiresDefault "access plus 1 month"
+</IfModule>
+
+# ------------------------------------------------
+# 6) Optional: simple hotlink protection for images
+# ------------------------------------------------
+# <IfModule mod_rewrite.c>
+#   RewriteEngine On
+#   RewriteCond %{HTTP_REFERER} !^$ 
+#   RewriteCond %{HTTP_REFERER} !skywinvalve\.com [NC]
+#   RewriteCond %{HTTP_REFERER} !googleusercontent\.com [NC]
+#   RewriteRule \.(jpe?g|png|gif|webp|svg)$ - [F,L]
+# </IfModule>
