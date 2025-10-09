@@ -106,6 +106,7 @@
                         <a class="dropdown-item" href="gate-valve.php">Gate Valve </a>
                         <a class="dropdown-item" href="globe-valve.php">Globe Valve </a>
                         <a class="dropdown-item" href="check-valve.php">Check Valve</a>
+                        <a class="dropdown-item" href="skids.php">Skids</a>
                      </div>
                   </li>
 

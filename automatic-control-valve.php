@@ -72,7 +72,7 @@ p.font {
                                             <img src="assets/imgs/innerpage/product/detail/automatic-control-valve/automatic-control-valve-asv-151.webp" alt="">
                                         </div>
                                         <div class="cont">
-                                            <h6 class="mb-0">Automatic Control Valve (ACV-151)</h6>
+                                            <h6 class="mb-0">Pressure Reducing ACV</h6>
                                         </div>
                                     </a>
                                 </div>
@@ -84,7 +84,7 @@ p.font {
                                            <img src="assets/imgs/innerpage/product/detail/automatic-control-valve/automatic-control-valve-asv-161.webp" alt="">
                                         </div>
                                         <div class="cont">
-                                            <h6 class="mb-0">Automatic Control Valve (ACV-161)</h6>
+                                            <h6 class="mb-0">Pressure Relief ACV</h6>
                                         </div>
                                     </a>
                                 </div>
@@ -96,7 +96,7 @@ p.font {
                                             <img src="assets/imgs/innerpage/product/detail/automatic-control-valve/automatic-control-valve-asv-171.webp" alt="">
                                         </div>
                                         <div class="cont">
-                                            <h6 class="mb-0">Automatic Control Valve (ACV-171)
+                                            <h6 class="mb-0">Float Type ACV (ACV 201)
                                             </h6>
                                         </div>
                                     </a>
@@ -109,7 +109,7 @@ p.font {
                                             <img src="assets/imgs/innerpage/product/detail/automatic-control-valve/deluge-valve.webp" alt="">
                                         </div>
                                         <div class="cont">
-                                            <h6 class="mb-0">Deluge valve (ACV 171)             
+                                            <h6 class="mb-0">Deluge Valve (ACV 171)         
                                             </h6>
                                         </div>
                                     </a>

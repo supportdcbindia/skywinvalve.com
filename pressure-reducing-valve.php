@@ -89,7 +89,7 @@ p.font {
                             </div>
                             <div class="col-lg-4 col-md-6">
                                 <div class="item">
-                                    <a href="pilot-oprated-presure-reducing-valve-sv-111.php">
+                                    <a href="javascript:;">
                                         <div class="img">
                                             <img src="assets/imgs/innerpage/product/detail/pressure-reducing-valve/pressure-reducing-station.webp"
                                                 alt="">

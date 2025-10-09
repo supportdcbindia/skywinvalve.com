@@ -173,6 +173,27 @@ p.font {
              </div>
 
 
+             <div class="col-lg-6">
+                 <div class="item mt-30">
+                     <a href="skids.php">
+                         <div class="img">
+                             <img src="assets/imgs/innerpage/product/landing/gas-skid.webp" alt=""
+                                 class="radius-10">
+                             <div class="tag">
+                                 <span>View More</span>
+                             </div>
+                         </div>
+                         <div class="cont mt-30">
+                             <div>
+                                 <h6 class="line-height-1">Skids
+                                 </h6>
+                             </div>
+                         </div>
+                     </a>
+                 </div>
+             </div>
+
+
 
 
 

@@ -5,7 +5,7 @@
             <div class="col-lg-12">
                 <div class="caption">
                     <!-- <h6 class="sub-title">Our Blog</h6> -->
-                    <h1 class="fz-40">Automatic Control Valve (ASV-151)</h1>
+                    <h1 class="fz-40">Pressure Reducing ACV</h1>
                 </div>
             </div>
         </div>

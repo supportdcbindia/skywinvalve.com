@@ -123,6 +123,19 @@
                                 </div>
                             </div>
 
+                            <div class="col-lg-4 col-md-6">
+                                <div class="item">
+                                    <a href="javascript:;">
+                                        <div class="img">
+                                            <img src="assets/imgs/innerpage/product/detail/safety-valve/safety-valve-series-svt-22-1-l.webp"
+                                                alt="">
+                                        </div>
+                                        <div class="cont">
+                                            <h6 class="mb-0">Safety Valve - Series SVT 22-1/L</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                             
                             <div class="col-lg-4 col-md-6">
                                 <div class="item">
@@ -166,17 +179,22 @@
                                 </div>
                             </div>
 
-
-
-
-
-
-
-
-
-
-
                             <div class="col-lg-4 col-md-6">
+                                <div class="item">
+                                    <a href="safety-valve-series-svt-40c.php">
+                                        <div class="img">
+                                            <img src="assets/imgs/innerpage/product/detail/safety-valve/safety-valve-series-svt-40-b.webp"
+                                                alt="">
+                                        </div>
+                                        <div class="cont">
+                                            <h6 class="mb-0">Safety Valve - Series SVT 40/B</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <!-- <div class="col-lg-4 col-md-6">
                                 <div class="item">
                                     <a href="safety-valve-series-svt-20-1-CL.php">
                                         <div class="img">
@@ -235,7 +253,7 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
