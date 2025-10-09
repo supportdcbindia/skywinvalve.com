@@ -383,7 +383,7 @@
 
 <?php include('footer.php'); ?>
 
-<script nonce="<?= htmlspecialchars($cspNonce, ENT_QUOTES) ?>">
+<script>
   /* Typewriter quote + scroll reveal – vanilla JS */
   (function() {
     const quote =

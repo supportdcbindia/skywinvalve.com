@@ -31,10 +31,6 @@
 </head>
 
 <body class="home-digital main-bg">
-   <?php
-   $cspNonce = base64_encode(random_bytes(16));
-   header("Content-Security-Policy: default-src 'self'; img-src 'self' data: blob:; script-src 'self' 'nonce-$cspNonce'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'");
-   ?>
    <!-- <div id="smooth-wrapper"> -->
       <div class="top-bar d-none d-xl-block">
          <div class="container">
