@@ -51,7 +51,6 @@
                               class="d-inline-block body-dominant-color">mkt@skywinvalve.com</a>
                         </span>
                      </li>
-                     </li>
                   </ul>
                </div>
                <div class="col-xl-5">
