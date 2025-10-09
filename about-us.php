@@ -79,7 +79,9 @@
 
       <div class="sv-quote">
         <span class="sv-quote-mark" aria-hidden="true">“</span>
-        <p id="svType"></p>
+        <p id="svType">
+          More than two decades ago, we founded Skywin Valve with a singular vision: to deliver world-class products in the instrumentation and control sectors, with an initial focus on precision in pressure and flow parameters.
+        </p>
       </div>
 
       <div class="sv-body">
@@ -383,7 +385,7 @@
 
 <?php include('footer.php'); ?>
 
-<script>
+<!-- <script>
   /* Typewriter quote + scroll reveal – vanilla JS */
   (function() {
     const quote =
@@ -413,4 +415,4 @@
     });
     if (sec) io.observe(sec);
   })();
-</script>
+</script> -->
