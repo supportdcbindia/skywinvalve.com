@@ -382,35 +382,4 @@
 
 
 <?php include('footer.php'); ?>
-
-<script>
-  /* Typewriter quote + scroll reveal – vanilla JS */
-  (function() {
-    const quote =
-      "More than two decades ago, we founded Skywin Valve with a singular vision: to deliver world-class products in the instrumentation and control sectors, with an initial focus on precision in pressure and flow parameters.";
-    const speed = 20;
-
-    const typeEl = document.getElementById('svType');
-    let i = 0;
-
-    function type() {
-      if (!typeEl) return;
-      typeEl.textContent = quote.slice(0, i++);
-      if (i <= quote.length) requestAnimationFrame(() => setTimeout(type, speed));
-    }
-
-    const sec = document.querySelector('.sv-director');
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (!e.isIntersecting) return;
-        document.querySelector('.sv-card')?.classList.add('sv-in');
-        document.querySelector('.sv-portrait')?.classList.add('sv-in');
-        type();
-        io.disconnect();
-      });
-    }, {
-      threshold: .25
-    });
-    if (sec) io.observe(sec);
-  })();
-</script>
+<script src="/assets/js/about.js" defer></script>
