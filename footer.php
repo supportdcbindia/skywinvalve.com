@@ -155,9 +155,9 @@
   });
 </script>
 
-<script src="assets/js/jquery.validate.min.js"></script>
-<script src="assets/js/index.js"></script>
-<script src="assets/js/form-buzz.js"></script>
+<script src="assets/js/jquery.validate.min.js?ver=<?php echo time(); ?>"></script>
+<script src="assets/js/index.js?ver=<?php echo time(); ?>"></script>
+<script src="assets/js/form-buzz.js?ver=<?php echo time(); ?>"></script>
 
 </body>
 

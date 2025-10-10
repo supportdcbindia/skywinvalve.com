@@ -28,8 +28,8 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.min.css" />
 
 
-   <link rel="stylesheet" href="assets/css/sidebar-btn.css" />
-   <link rel="stylesheet" href="assets/css/model-custom.css" />
+   <link rel="stylesheet" href="assets/css/sidebar-btn.css?ver=<?php echo time(); ?>" />
+   <link rel="stylesheet" href="assets/css/model-custom.css?ver=<?php echo time(); ?>" />
 
    <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
