@@ -100,7 +100,7 @@
                         aria-haspopup="true" aria-expanded="false"><span class="rolling-text">Product</span></a>
                      <div class="dropdown-menu">
                         <a class="dropdown-item" href="safety-valve.php">Safety Valve</a>
-                        <a class="dropdown-item" href="pressure-reducing-valve.php">Pressure Reducing Valve</a>
+                        <a class="dropdown-item" href="pressure-reducing-valve.php">Pressure Reducing Valve & Station</a>
                         <a class="dropdown-item" href="automatic-control-valve.php">Automatic Control Valve</a>
                         <a class="dropdown-item" href="control-valve.php">Control Valve</a>
                         <a class="dropdown-item" href="gate-valve.php">Gate Valve </a>

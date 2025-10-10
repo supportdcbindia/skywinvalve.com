@@ -19,7 +19,7 @@ p.font {
             <div class="col-lg-12">
                 <div class="caption">
                     <!-- <h6 class="sub-title">Our Blog</h6> -->
-                    <h1 class="fz-40">Pressure Reducing Valve
+                    <h1 class="fz-40">Skids
 
 
                     </h1>
@@ -41,7 +41,7 @@ p.font {
                         <div class="row">
                             <div class="col-lg-4 col-md-6">
                                 <div class="item">
-                                    <a href="javascript:;">
+                                    <a href="gas-skid.php">
                                         <div class="img">
                                             <img src="assets/imgs/innerpage/product/detail/skids/gas-skid.webp"
                                                 alt="">

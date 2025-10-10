@@ -19,7 +19,7 @@ p.font {
             <div class="col-lg-12">
                 <div class="caption">
                     <!-- <h6 class="sub-title">Our Blog</h6> -->
-                    <h1 class="fz-40">Pressure Reducing Valve
+                    <h1 class="fz-40">Pressure Reducing Valve & Station
 
 
                     </h1>

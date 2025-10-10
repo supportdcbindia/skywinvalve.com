@@ -227,52 +227,6 @@ p.font {
                 </div>
             </div>
         </div>
-
-        <div class="page-header-new breadcum">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="caption">
-                            <!-- <h6 class="sub-title">Our Blog</h6> -->
-                            <h1 class="fz-30">Gas Skid
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row mt-50 product-landing-detail">
-            <div class="col-lg-4 col-md-6">
-                <div class="item">
-                    <a href="assets/imgs/innerpage/product/detail/control-valve/gas-skid.webp"
-                        class="popup-image gallery-item">
-                        <div class="img">
-                            <img src="assets/imgs/innerpage/product/detail/control-valve/gas-skid.webp" alt="">
-                        </div>
-                        <div class="cont">
-                            <h6 class="mb-0">Gas Skid
-                            </h6>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="item">
-                    <a href="assets/imgs/innerpage/product/detail/pressure-reducing-valve/pressure-reducing-station.webp"
-                        class="popup-image gallery-item">
-                        <div class="img">
-                            <img src="assets/imgs/innerpage/product/detail/pressure-reducing-valve/pressure-reducing-station.webp"
-                                alt="">
-                        </div>
-                        <div class="cont">
-                            <h6 class="mb-0">Pressure Reducing Station
-                            </h6>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
