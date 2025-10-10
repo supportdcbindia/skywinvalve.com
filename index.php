@@ -105,7 +105,7 @@
                                     valves</a></strong> to Manufacturing and Engineering Sector including OEM's.</p>
                     </div>
                     <div class="stutas pt-15 mt-20 bord-thin-top">
-                        <a href="about-us.php" class="butn butn-md text-white main-colorbg">
+                        <a href="about-us.php" class="butn butn-md text-white main-colorbg click1">
                             <span>Get Quote</span>
                             <i class="ml-5">
                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
@@ -420,7 +420,7 @@
                                 petrochemicals to processing industries for foods, beverages and manufacturing. We gain
                                 many testimonials of satisfied customers confirming our reliability and performance.
                             </p>
-                            <a href="javascript:;" class="butn butn-md text-white main-colorbg">
+                            <a href="javascript:;" class="butn butn-md text-white main-colorbg click1">
                                 <span>Get Quote</span>
                                 <i class="ml-5">
                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none"

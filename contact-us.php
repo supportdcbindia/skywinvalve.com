@@ -14,7 +14,7 @@
 <div class="contactAddress section-padding bg-white">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-4">
+            <div class="col-sm-12 col-md-5">
                 <div class="address">
                     <div class="sectionHeader">
                         <h2>Contact Details</h2>
@@ -47,13 +47,13 @@
                     </div>
                     <div class="addressItem">
                         <ul>
-                            <li><a href="mailto:mkt@skywinvalve.com">mkt@skywinvalve.com</a> 
+                            <li><a href="mailto:mkt@skywinvalve.com">mkt@skywinvalve.com</a>
                                 <a href="mailto:sales@skywinvalve.com">sales@skywinvalve.com</a>
-                                
+
                             </li>
-                              <li><a href="tel:9376608033">+91 93766 08033</a> </li>
+                            <li><a href="tel:9376608033">+91 93766 08033</a> </li>
                             <li> <a href="tel:6352881369">+91 63528 81369</a> </li>
-                           
+
 
                         </ul>
                     </div>
@@ -71,38 +71,65 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-8">
+            <div class="col-sm-12 col-md-7">
                 <div class="contactForm">
-                    <form action="#!">
-                        <div class="formFieldWrapper">
-                            <div class="formField">
-                                <input size="40" maxlength="400" class="inputField" aria-required="true"
-                                    aria-invalid="false" placeholder="Name" value="" type="text" name="your-name">
-                            </div>
-                            <div class="formField">
-                                <input size="40" maxlength="400" class="inputField" aria-required="true"
-                                    aria-invalid="false" placeholder="Email Address" value="" type="email" name="email">
+                    <form class="form-horizontal form3" action="inquiry-action.php" method="post"
+                        novalidate="novalidate">
+                        <div class="form-group has-feedback">
+                            <div class="col-md-12">
+                                <input name="name" id="name" type="text" placeholder="Name"
+                                    class="form-control">
                             </div>
                         </div>
-                        <div class="formFieldWrapper">
-                            <div class="formField">
-                                <input size="40" maxlength="400" class="inputField" aria-required="true"
-                                    aria-invalid="false" placeholder="Subject" value="" type="text" name="sub">
-                            </div>
-                            <div class="formField">
-                                <input size="40" maxlength="400" class="inputField" aria-required="true"
-                                    aria-invalid="false" placeholder="Contact Number" value="" type="email"
-                                    name="phone">
+                        <div class="form-group has-feedback">
+                            <div class="col-md-12">
+                                <input name="company_name" id="company_name" type="text" placeholder="Company Name"
+                                    class="form-control">
                             </div>
                         </div>
-                        <div class="formField">
-                            <textarea size="40" maxlength="400" class="inputField" aria-required="true"
-                                aria-invalid="false" placeholder="Message" value="" type="text"
-                                name="message"></textarea>
+                        <div class="form-group has-feedback">
+                            <div class="col-md-12">
+                                <input name="email" id="email" type="text" placeholder="E-Mail Address"
+                                    class="form-control">
+                            </div>
                         </div>
-
-                        <button type="submit" class="butn butn-md text-white main-colorbg">Submit <i
-                                class="fa-light fa-arrow-right-long"></i></button>
+                        <div class="form-group has-feedback class-feedback">
+                            <div class="col-md-12">
+                                <input name="city" id="city" type="text" placeholder="City"
+                                    class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <div class="col-md-12">
+                                <input name="number" id="number" type="tel" placeholder="Phone" maxlength="15"
+                                    minlength="10" class="form-control number21">
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <div class="col-md-12">
+                                <textarea class="form-control" name="message" id="message"
+                                    placeholder="Requirement"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-8 col position-relative">
+                                        <input name="captcha" id="captcha" placeholder="Captcha Code"
+                                            class="form-control" type="text">
+                                    </div>
+                                    <div class="col-md-4 col">
+                                        <img src="captcha.php" class="capside">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <div class="col-md-12 col-sm-3 col-xs-12">
+                                <input name="submit" class="submit submitbutton" type="submit"
+                                    value="Submit Now!" style="background: #0a58ca; border-color: #0a58ca; color: #fff;">
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>

@@ -153,7 +153,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   </li>
                </ul>
                <div class="get-quote">
-                  <a href="javascript:;" class="butn butn-md text-white main-colorbg">
+                  <a href="javascript:;" class="butn butn-md text-white main-colorbg click1">
                      <span>Get Quote</span>
                      <i class="ml-5">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
