@@ -35,7 +35,7 @@
                     </div>
                     <div class="addressItem">
                         <ul>
-                            <li><a href="mailto:info@skywinvalve.com">info@skywinvalve.com</a></li>
+                            <li><a href="mailto:mkt@skywinvalve.com">mkt@skywinvalve.com</a></li>
                             <li><a href="tel:+919825845510"> +91 98258 45510</a></li>
                         </ul>
                     </div>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="addressItem">
                         <ul>
-                            <li><a href="mailto:mkt@skywinvalve.com">mkt@skywinvalve.com</a>
+                            <li><a href="mailto:info@skywinvalve.com">info@skywinvalve.com</a><br>
                                 <a href="mailto:sales@skywinvalve.com">sales@skywinvalve.com</a>
 
                             </li>

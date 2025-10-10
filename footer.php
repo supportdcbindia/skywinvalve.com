@@ -62,8 +62,8 @@
                            </div>
                            <div class="text">
                               <p class="mb-10">
-                                 <!-- <a href="mailto:mkt@skywinvalve.com">mkt@skywinvalve.com</a> -->
-                                 <a href="mailto:info@skywinvalve.com">info@skywinvalve.com</a>
+                                 <a href="mailto:mkt@skywinvalve.com">mkt@skywinvalve.com</a>
+                                 <!-- <a href="mailto:info@skywinvalve.com">info@skywinvalve.com</a> -->
                               </p>
                               <h5>
                                  <a href="#">+91 98258 45510</a>
