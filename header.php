@@ -59,8 +59,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    <!-- <div id="smooth-wrapper"> -->
       <div class="top-bar d-none d-xl-block">
          <div class="container">
-            <div class="row">
-               <div class="col-xl-7">
+            <div class="row align-items-center">
+               <div class="col-xl-12 text-end">
                   <ul>
                      <li>
                         <span class="d-inline-block">
@@ -78,7 +78,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                      </li>
                   </ul>
                </div>
-               <div class="col-xl-5">
+               <!-- <div class="col-xl-5">
                   <div class="d-flex justify-content-end">
                      <div class="socila-icon">
                         <a href="javascript:;"><i class="fa-brands fa-facebook-f"></i> </a>
@@ -87,7 +87,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <a href="javascript:;"><i class="fa-brands fa-linkedin-in"></i> </a>
                      </div>
                   </div>
-               </div>
+               </div> -->
             </div>
          </div>
       </div>

@@ -1,6 +1,6 @@
-var tpj2=jQuery;
+var tpj2=$;
         
-tpj2.noConflict();
+// tpj2.noConflict();
 tpj2(document).ready(function () {
     tpj2(".click1").click(function () {
         if (parseInt(tpj2('#ispopupopen').val())) {
@@ -35,7 +35,7 @@ tpj2(document).ready(function () {
 
 
 
-tpj2.noConflict();
+// tpj2.noConflict();
     tpj2(document).ready(function() {
         tpj2(".click2").click(function(event) {
             var hreff = tpj2(this).attr('pdf');
