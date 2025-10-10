@@ -167,7 +167,7 @@ if ($response->result) {
                       </tr>
                        <tr>
                           <td align="right" style="font-family:arial;font-size:12px;font-weight:normal;color:#000000">Catalogue Name:</td>
-                          <td style="font-family:arial;font-size:12px;font-weight:normal;color:#000000;line-height:17px"><b>'.$path1[0].'</b></td>
+                          <td style="font-family:arial;font-size:12px;font-weight:normal;color:#000000;line-height:17px"><b>'.$path1[1].'</b></td>
                         </tr>
                      
 
@@ -218,7 +218,7 @@ if ($response->result) {
               $curlArr['bcoz'] = "MAIL SEND SUCCUSS";
               $curlArr['status'] = "SUCCESS";
               $response = send_request($curlArr);
-              header('location:' . $thanks_page."?varname=$path1[0]");
+              header('location:' . $thanks_page."?varname=$path1[1]");
               //echo "Message Sent OK<p></p>\n";
             } catch (phpmailerException $e) {
               $curlArr['sitename'] = $_SERVER['HTTP_HOST'];
