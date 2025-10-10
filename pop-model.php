@@ -28,7 +28,7 @@ $message = "Hello Team ".$companyname.", I was going through your Website, Pleas
         </li> -->
         <li class="none-li inquiery-icon  imgnone" style="background-color: #0f4da2 !important;">
             <a href="tel:<?php echo str_replace(" ", "", $phone); ?>">
-                <span class="icon1"> <i class="fa fa-phone"></i></span> <span class="btn-text"> Call</span>
+                <span class="icon1"> <i class="fa fa-phone-alt"></i></span> <span class="btn-text"> Call</span>
             </a>
         </li>
         <li class="download-pdf none-li inquiery-icon  imgnone">
