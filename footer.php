@@ -155,6 +155,10 @@
   });
 </script>
 
+<script src="assets/js/jquery.validate.min.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/form-buzz.js"></script>
+
 </body>
 
 </html>
