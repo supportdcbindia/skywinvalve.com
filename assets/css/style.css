@@ -9667,7 +9667,7 @@ header.in-box {
 }
 
 .single-service-area-five {
-  padding: 40px 30px 0px;
+  padding: 35px 30px 0px;
   width: 460px;
   height: 50%;
   height: auto;
@@ -9687,14 +9687,14 @@ header.in-box {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   position: relative;
   z-index: 1;
 }
 
 .single-service-area-five .icon-area .icon {
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
   background: #035ba2;
   border: 1px solid #035ba2;
   border-radius: 5px;
@@ -9706,7 +9706,7 @@ header.in-box {
 
 .single-service-area-five .icon-area p {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 48px;
   display: flex;
   align-items: center;
@@ -9717,8 +9717,8 @@ header.in-box {
 .single-service-area-five .icon-area::after {
   content: "";
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   left: -15px;
   top: -22px;
   background: rgb(107 207 246);
