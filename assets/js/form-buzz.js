@@ -100,7 +100,7 @@ function startTimer() {
             // tpj2('#ispopupopen').val(0);
             buzzbtn();
         }
-    }, 20000);
+    }, 10000);
 }
 
 function onClick() {
