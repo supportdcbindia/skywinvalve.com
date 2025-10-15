@@ -97,10 +97,10 @@
                         </div>
                         <div class="col-lg-6">
                            <div class="socila-icon text-md-end">
-                              <a href="https://www.facebook.com/profile.php?id=100062561269935"><i class="fa-brands fa-facebook-f"></i> </a>
-                              <a href="https://www.instagram.com/valveskywin/"><i class="fa-brands fa-instagram"></i> </a>
+                              <a href="https://www.facebook.com/profile.php?id=100062561269935" target="_blank"><i class="fa-brands fa-facebook-f"></i> </a>
+                              <a href="https://www.instagram.com/valveskywin/" target="_blank"><i class="fa-brands fa-instagram"></i> </a>
                               <!-- <a href="javascript:;"><i class="fa-brands fa-x-twitter"></i> </a> -->
-                              <a href="https://www.linkedin.com/company/105336561/admin/dashboard/"><i class="fa-brands fa-linkedin-in"></i></a>
+                              <a href="https://www.linkedin.com/company/105336561/admin/dashboard/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                            </div>
                         </div>
                      </div>
