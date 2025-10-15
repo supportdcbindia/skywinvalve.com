@@ -46,7 +46,7 @@ $message = "Hello Team ".$companyname.", I was going through your Website, Pleas
             <div class="modal-body stick_popup">
                 <h5 class="modal-title">Get Your Free Quote…!</h5>
                 <div class="stick_close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></div>
-                <div class="row mt-40">
+                <div class="row mt-20">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="footer-widgets tag-widget">
                             <input id="inquiery-model" value="<?php echo $_COOKIE['inquierymodel'];?>" type="hidden" />
@@ -142,7 +142,7 @@ $message = "Hello Team ".$companyname.", I was going through your Website, Pleas
             <div class="modal-body ">
                 <h5 class="modal-title">Catalogue Request Form…!</h5>
                 <div class="stick_close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></div>
-                <div class="row mt-40">
+                <div class="row mt-20">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class=" footer-widgets tag-widget formtop">
                             <form class="form-horizontal form2" action="catalogue-action.php" method="post">
