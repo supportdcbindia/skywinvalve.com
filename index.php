@@ -161,68 +161,117 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-12">
                 <div class="item mt-30">
-                    <div class="img">
-                        <img src="assets/imgs/product/safety-valve.webp" alt="" class="radius-10">
-                        <a href="safety-valve.php" class="tag">
-                            <span>View More</span>
-                        </a>
-                    </div>
-                    <div class="cont mt-30">
-                        <div>
-                            <h6 class="line-height-1"><a href="safety-valve.php">Safety Valve</a>
-                            </h6>
+                    <a href="safety-valve.php" class="tag">
+                        <div class="img">
+                            <img src="assets/imgs/innerpage/product/landing/safety-valve.webp" alt="" class="radius-10">
+                            <div class="tag">
+                                <span>View More</span>
+                            </div>
                         </div>
-                    </div>
+                        <div class="cont mt-30">
+                            <div>
+                                <h6 class="line-height-1">Safety Valve
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-12">
                 <div class="item mt-30">
-                    <div class="img">
-                        <img src="assets/imgs/product/pressure-reducing-valve.webp" alt="" class="radius-10">
-                        <a href="pressure-reducing-valve.php" class="tag">
-                            <span>View More</span>
-                        </a>
-                    </div>
-                    <div class="cont mt-30">
-                        <div>
-                            <h6 class="line-height-1"><a href="pressure-reducing-valve.php">Pressure Reducing Valve</a>
-                            </h6>
+                    <a href="pressure-reducing-valve.php" class="tag">
+                        <div class="img">
+                            <img src="assets/imgs/innerpage/product/landing/pressure-reducing-valve.webp" alt=""
+                                class="radius-10">
+                            <div class="tag">
+                                <span>View More</span>
+                            </div>
                         </div>
-                    </div>
+                        <div class="cont mt-30">
+                            <div>
+                                <h6 class="line-height-1">Pressure Reducing Valve & Station
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-12">
                 <div class="item mt-30">
-                    <div class="img">
-                        <img src="assets/imgs/product/automatic-control-valve.webp" alt="" class="radius-10">
-                        <a href="automatic-control-valve.php" class="tag">
-                            <span>View More</span>
-                        </a>
-                    </div>
-                    <div class="cont mt-30">
-                        <div>
-                            <h6 class="line-height-1"><a href="automatic-control-valve.php">Automatic Control Valve</a>
-                            </h6>
+                    <a href="automatic-control-valve.php" class="tag">
+                        <div class="img">
+                            <img src="assets/imgs/innerpage/product/landing/automatic-control-valve.webp" alt=""
+                                class="radius-10">
+                            <div class="tag">
+                                <span>View More</span>
+                            </div>
                         </div>
-                    </div>
+                        <div class="cont mt-30">
+                            <div>
+                                <h6 class="line-height-1">Automatic Control Valve
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-12">
                 <div class="item mt-30">
-                    <div class="img">
-                        <img src="assets/imgs/product/control-valve.webp" alt="" class="radius-10">
-                        <a href="control-valve.php" class="tag">
-                            <span>View More</span>
-                        </a>
-                    </div>
-                    <div class="cont mt-30">
-                        <div>
-                            <h6 class="line-height-1"><a href="control-valve.php">Control Valve</a>
-                            </h6>
+                    <a href="control-valve.php">
+                        <div class="img">
+                            <img src="assets/imgs/innerpage/product/landing/control-valve.webp" alt=""
+                                class="radius-10">
+                            <div class="tag">
+                                <span>View More</span>
+                            </div>
                         </div>
-                    </div>
+                        <div class="cont mt-30">
+                            <div>
+                                <h6 class="line-height-1">Control Valve
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="item mt-30">
+                    <a href="gate-valve.php">
+                        <div class="img">
+                            <img src="assets/imgs/innerpage/product/landing/gate-valve.webp" alt=""
+                                class="radius-10">
+                            <div class="tag">
+                                <span>View More</span>
+                            </div>
+                        </div>
+                        <div class="cont mt-30">
+                            <div>
+                                <h6 class="line-height-1">Gate Valve
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="item mt-30">
+                    <a href="globe-valve.php">
+                        <div class="img">
+                            <img src="assets/imgs/innerpage/product/landing/globe-valve.webp" alt=""
+                                class="radius-10">
+                            <div class="tag">
+                                <span>View More</span>
+                            </div>
+                        </div>
+                        <div class="cont mt-30">
+                            <div>
+                                <h6 class="line-height-1">Globe Valve
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -245,17 +294,17 @@
             <?php
             $data = glob("./assets/imgs/innerpage/approved-list/*.*");
             ?>
-                <?php
-                foreach ($data as $c) {
-                ?>
-                    <div class="col-md-3 col-xxl-2 col-6 mb-3">
-                        <a href="<?php echo $c; ?>" class="fancybox popup-image gallery-item">
-                            <img class="w-100" src="<?php echo $c; ?>" />
-                        </a>
-                    </div>
-                <?php
-                }
-                ?>
+            <?php
+            foreach ($data as $c) {
+            ?>
+                <div class="col-md-3 col-xxl-2 col-6 mb-3">
+                    <a href="<?php echo $c; ?>" class="fancybox popup-image gallery-item">
+                        <img class="w-100" src="<?php echo $c; ?>" />
+                    </a>
+                </div>
+            <?php
+            }
+            ?>
         </div>
 </section>
 
