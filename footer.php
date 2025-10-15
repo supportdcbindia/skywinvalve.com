@@ -20,7 +20,7 @@
                         <!-- <div class="tit mb-20">
                      <h6>Social</h6>
                   </div> -->
-                        <div class="footer-img text-center">
+                        <div class="footer-img text-left">
                            <a href="javascript:;">
                               <img src="assets/imgs/logo/skywin-logo.webp" alt="logo">
                            </a>
@@ -84,7 +84,7 @@
                      </div>
                   </div>
                </div>
-               <div class="sub-footer pt-30 pb-70 pd-md-70 bord-thin-top ontop">
+               <div class="sub-footer pt-30 pb-30 pd-md-70 bord-thin-top ontop">
                   <div class="container">
                      <div class="row justify-content-wetween">
                         <div class="col-lg-6">
@@ -97,10 +97,10 @@
                         </div>
                         <div class="col-lg-6">
                            <div class="socila-icon text-md-end">
-                              <a href="javascript:;"><i class="fa-brands fa-facebook-f"></i> </a>
-                              <a href="javascript:;"><i class="fa-brands fa-instagram"></i> </a>
-                              <a href="javascript:;"><i class="fa-brands fa-x-twitter"></i> </a>
-                              <a href="javascript:;"><i class="fa-brands fa-linkedin-in"></i></a>
+                              <a href="https://www.facebook.com/profile.php?id=100062561269935"><i class="fa-brands fa-facebook-f"></i> </a>
+                              <a href="https://www.instagram.com/valveskywin/"><i class="fa-brands fa-instagram"></i> </a>
+                              <!-- <a href="javascript:;"><i class="fa-brands fa-x-twitter"></i> </a> -->
+                              <a href="https://www.linkedin.com/company/105336561/admin/dashboard/"><i class="fa-brands fa-linkedin-in"></i></a>
                            </div>
                         </div>
                      </div>

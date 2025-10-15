@@ -851,7 +851,7 @@
         </div>
     </div>
 </section>
-<section class="blog-list-half crev section-padding">
+<!-- <section class="blog-list-half crev section-padding">
     <div class="container">
         <div class="sec-lg-head mb-40">
             <div class="row">
@@ -948,6 +948,6 @@
 
         </div>
     </div>
-</section>
+</section> -->
 <!-- ==================== End Contact ==================== -->
 <?php include('footer.php'); ?>
